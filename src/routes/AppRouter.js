@@ -3,10 +3,11 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import {Login} from '../pages/Login'
 import { DashboardRouter } from './DashboardRouter'
 
+
 export const AppRouter = () => {
   return (
     <BrowserRouter>
-        <div className='container'>
+        <div className=''>
             <Routes>
                 <Route path='/login' element={<Login/>}/>
                 <Route path='*' element={<DashboardRouter/>}/>
